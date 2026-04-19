@@ -1,4 +1,5 @@
-import { createBrowserRouter } from "react-router";
+// 1. 把 createBrowserRouter 改成 createHashRouter
+import { createHashRouter } from "react-router";
 import LoginPage from "./pages/LoginPage";
 import OnboardingPage from "./pages/OnboardingPage";
 import AdoptionFormPage from "./pages/AdoptionFormPage";
@@ -9,7 +10,8 @@ import ExercisePage from "./pages/ExercisePage";
 import DietPage from "./pages/DietPage";
 import SocialPage from "./pages/SocialPage";
 
-export const router = createBrowserRouter([
+// 2. 把 createBrowserRouter 改成 createHashRouter
+export const router = createHashRouter([
   {
     path: "/",
     Component: LoginPage,
