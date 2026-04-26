@@ -5,6 +5,7 @@ import { Heart, Sparkles } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
+import logoImg from '../../imports/image.png';
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ export default function LoginPage() {
               className="inline-flex items-center justify-center mb-4"
             >
               <img
-                src="/src/imports/image.png"
+                src={logoImg}
                 alt="Catalyst Logo"
                 className="w-32 h-32 object-contain"
               />
